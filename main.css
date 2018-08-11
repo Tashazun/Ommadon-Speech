@@ -1,6 +1,10 @@
 body {
     min-width: 100vw;
     min-height: 100vh;
+
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
 }
 
 h1 {
