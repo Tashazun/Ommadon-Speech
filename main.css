@@ -11,6 +11,22 @@ h1 {
     font-family: 'Do Hyeon', sans-serif;
 }
 
+#box1 {
+    justify-self: center;
+    align-self: center;
+
+    grid-area: 1 / 1 / 2 / 2; 
+}
+
+#bar {
+    align-self: end;
+    height: 5%;
+    width: 100%;
+    background-color: #C70039;
+    
+    grid-area: 1 / 1 / 2 / 3;
+}
+
 @media screen  and (min-width: 750px) {
 
     h1 {
