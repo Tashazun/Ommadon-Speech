@@ -1,32 +1,119 @@
 body {
-    min-width: 100vw;
+    margin: 0;
+    max-width: 100vw;
     min-height: 100vh;
 
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(5, 1fr);
+}
+span {
+    writing-mode: vertical-rl;
+    text-orientation: upright;
 }
 
 h1 {
     font-family: 'Do Hyeon', sans-serif;
+    font-size: 2rem;
+}
+
+#wrapper {
+
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+}
+#bar1 {
+    align-self: start;
+    height: 100%;
+    width: 5%;
+    background: #C70039;
+
+    grid-area: 1 / 1 / 2 / 2;
 }
 
 #box1 {
     justify-self: center;
     align-self: center;
 
-    grid-area: 1 / 1 / 2 / 2; 
+    grid-area: 1 / 2 / 2 / 3; 
 }
 
-#bar {
+#bar2 {
     align-self: end;
     height: 5%;
     width: 100%;
     background-color: #C70039;
     
-    grid-area: 1 / 1 / 2 / 3;
+    grid-area: 1 / 1 / 2 / 6;
 }
 
+#box2 {
+    align-self: end;
+
+    grid-area: 1 / 4 / 2 / 7;
+}
+
+#box3 {
+    align-self: start;
+
+    grid-area: 2 / 3 / 3 / 4;
+}
+
+#box4 {
+    justify-self: center;
+    align-self: center;
+
+    grid-area: 2 / 4 / 3 / 5;
+}
+
+#box5 {
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+
+    justify-self: end;
+    grid-area: 2 / 5 / 3 / 6;
+    margin: 0;
+}
+
+#box6 {
+    grid-area: 2 / 6 / 3 / 7;
+    align-self: end;
+    margin: 0;
+}
+
+#box7 {
+    grid-area: 3 / 2 / 4 / 5;
+    font-family: 'Anton', 'sans-serif';
+}
+
+#box8 {
+    grid-area: 3 / 3 / 4 / 5;
+    font-family: 'Anton', 'sans-serif';
+    align-self: center;
+}
+#box9 {
+    grid-area: 3 / 3 / 4 / 5;
+    font-family: 'Anton', 'sans-serif';
+    align-self: end;
+}
+#box10 {
+    grid-area: 4 / 2 / 5 / 6;
+    font-family: 'Anton', 'sans-serif';
+}
+#box11 {
+    grid-area: 4 / 3 / 5 / 5;
+    align-self: center;
+    justify-self: center;
+}
+#box12 {
+    grid-area: 5 / 3 / 6 / 6;
+}
+#box13 {
+    grid-area: 5 / 3 / 6 / 4;
+    align-self: center;
+}
+
+#box14 {
+    grid-area: 6 / 4 / 7 / 5;
+}
 @media screen  and (min-width: 750px) {
 
     h1 {
